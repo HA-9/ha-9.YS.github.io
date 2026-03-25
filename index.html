@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云山之味 - 门头店招设计方案</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 自定义Tailwind配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5A2B', // 中式原木色主色调
+                        secondary: '#F5F5DC', // 米白色辅色调
+                        dark: '#2C3639', // 深灰色文字
+                    },
+                    fontFamily: {
+                        chinese: ['"Noto Serif SC"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .section-title {
+                @apply text-3xl md:text-4xl font-bold text-primary pb-3 border-b-2 border-primary/30 mb-8;
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+            .img-box {
+                @apply w-full h-auto rounded-lg overflow-hidden shadow-md;
+            }
+        }
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FAF9F6;
+            font-family: "Noto Serif SC", "Microsoft YaHei", sans-serif;
+        }
+    </style>
+    <!-- 引入思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="text-dark">
+    <!-- 顶部导航栏 -->
+    <header class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-primary flex items-center">
+                <i class="fas fa-mountain me-2"></i>云山之味
+                <span class="text-sm font-normal text-dark/60 ml-2">店招设计方案</span>
+            </h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#plan" class="text-dark hover:text-primary transition-colors">平面设计图</a>
+                <a href="#effect" class="text-dark hover:text-primary transition-colors">实景效果图</a>
+                <a href="#other" class="text-dark hover:text-primary transition-colors">配色材质方案</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-dark text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-md px-4 py-2">
+            <nav class="flex flex-col space-y-3 py-2">
+                <a href="#plan" class="text-dark hover:text-primary transition-colors">平面设计图</a>
+                <a href="#effect" class="text-dark hover:text-primary transition-colors">实景效果图</a>
+                <a href="#other" class="text-dark hover:text-primary transition-colors">配色材质方案</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主视觉横幅 -->
+    <section class="bg-primary/10 py-12 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black text-primary mb-4">云山之味 门头店招设计方案</h2>
+            <p class="text-lg md:text-xl text-dark/70 max-w-2xl mx-auto">设计日期：2026.3.21 | 设计出品：HONG HUA YAN JIU SHE</p>
+            <p class="mt-2 text-dark/60 max-w-3xl mx-auto">本方案围绕品牌中式自然调性打造，兼顾视觉美感、夜间辨识度与品牌传播性，全方位呈现门店专属视觉形象</p>
+            <a href="#plan" class="mt-8 inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">
+                查看完整方案 <i class="fas fa-arrow-down ms-1"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- 平面设计图 6张图 -->
+        <section id="plan" class="mb-24">
+            <h3 class="section-title">PART 01 平面设计图</h3>
+            <p class="mb-8 text-dark/70 text-lg">平面设计严格遵循门店尺寸比例，采用中式美学排版，字体、间距、结构均经过精准规划，确保安装落地。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-white p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">主视觉平面设计</h4>
+                    <div class="img-box"><img src="/img/1.png" alt="" class="w-full"></div>
+                    <p class="mt-3 text-sm">标准尺寸布局，对称美学设计</p>
+                </div>
+                <div class="card-hover bg-white p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">夜景发光平面图</h4>
+                    <div class="img-box"><img src="/img/2.png" alt="" class="w-full"></div>
+                    <p class="mt-3 text-sm">光源分布规划，亮度均匀设计</p>
+                </div>
+                <div class="card-hover bg-white p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">夜景展示</h4>
+                    <div class="img-box"><img src="/img/3.png" alt="" class="w-full"></div>
+                    <p class="mt-3 text-sm">夜景特写</p>
+                </div>
+                <div class="card-hover bg-white p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">彩图1线稿</h4>
+                    <div class="img-box"><img src="/img/17.jpg" alt="" class="w-full"></div>
+                    <p class="mt-3 text-sm">清晰结构，视觉层次分明</p>
+                </div>
+                <div class="card-hover bg-white p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">彩图2线稿</h4>
+                    <div class="img-box"><img src="/img/18.jpg" alt="" class="w-full"></div>
+                    <p class="mt-3 text-sm">清晰结构，视觉层次分明</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实景效果图 8张图 -->
+        <section id="effect" class="mb-24">
+            <h3 class="section-title">PART 02 实景效果图</h3>
+            <p class="mb-8 text-dark/70 text-lg">还原真实门店场景，展示白天与夜间完整效果，直观呈现店招落地气质。</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/4.png" alt="" class="w-full"></div><p class="mt-2 text-sm">白天正面实景</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/5.png" alt="" class="w-full"></div><p class="mt-2 text-sm">夜景正面实景</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/7.png" alt="" class="w-full"></div><p class="mt-2 text-sm">夜景侧角实景</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/15.png" alt="" class="w-full"></div><p class="mt-2 text-sm">远景全景效果</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/16.png" alt="" class="w-full"></div><p class="mt-2 text-sm">近景特写效果</p></div>
+            </div>
+        </section>
+
+        <!-- 配色材质方案 7张图 -->
+        <section id="other">
+            <h3 class="section-title">PART 03 配色材质方案</h3>
+            <p class="mb-8 text-dark/70 text-lg">提供多套备选配色与材质组合，适配不同装修风格，满足多样化落地选择。</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/8.png" alt="" class="w-full"></div><p class="mt-3 text-sm">云山之味店招实景其他效果图</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/9.png" alt="" class="w-full"></div><p class="mt-3 text-sm">云山之味店招实景其他效果图</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/10.png" alt="" class="w-full"></div><p class="mt-3 text-sm">云山之味店招实景其他效果图</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/11.png" alt="" class="w-full"></div><p class="mt-3 text-sm">夜景效果</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/12.png" alt="" class="w-full"></div><p class="mt-3 text-sm">夜景效果</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/13.png" alt="" class="w-full"></div><p class="mt-3 text-sm">夜景效果</p></div>
+                <div class="card-hover bg-white p-4 rounded-lg"><div class="img-box"><img src="/img/14.png" alt="" class="w-full"></div><p class="mt-3 text-sm">夜景效果</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2 text-lg font-semibold">云山之味 门头店招设计方案</p>
+            <p class="text-white/70 text-sm">设计日期：2026.3.21 | 设计出品：HONG HUA YAN JIU SHE</p>
+            <p class="text-white/70 text-sm mt-1">全套方案：平面设计+实景效果+配色材质+灯光系统</p>
+            <p class="text-white/50 text-xs mt-4">© 2026 云山之味 专属定制 禁止盗用</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('py-2', window.scrollY > 50);
+            header.classList.toggle('py-4', window.scrollY <= 50);
+        });
+    </script>
+</body>
+</html>
